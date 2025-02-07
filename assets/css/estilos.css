@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imgs/fondo.jpg");
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Fija la imagen de fondo */
+  height: 100vh;
+  padding: 90px;
+
+  
+}
+
+/* Formulario */
+
+#preview {
+  height: 200px;
+  background-image: url(../imgs/lion.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+/* Tabla de Participantes */
+
+#Animales {
+  height: 100%;
+  background: #f0f0f0;
+}
+
+#Animales div div { 
+  transition: all 200ms;
+}
+
+#Animales div>div:hover { 
+  box-shadow: 0px 1px 5px 1px;
+}
+
+#Animales .card-body {
+  color: white;
+  background: #353535;
+  margin: 0;
+  padding: 0;
+  border-radius: 0px 0px 5px 5px;
+}
+/* Ajuste de imágenes */
+
+#Animales .card-img-top {
+  width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  max-height: 200px; /* Limita la altura máxima de las imágenes */
+  object-fit: contain; /* Mantiene la relación de aspecto dentro del contenedor */
+}
+
+
+.participante {
+  width: 30%; 
+  max-width: 30vw; /* Para limitar el ancho máximo con relación a la ventana */
+}
+
+
+/* Modal */
+
+.modal-dialog {
+  max-width: 85% !important;
+  color: white;
+  text-align: center;
+}
